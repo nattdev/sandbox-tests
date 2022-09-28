@@ -3,7 +3,16 @@
 	</head>
 	<body>
 		<div>This is a input tag</div>
-		<input type="texto" autofocus="autofocus">
+		<input class="on" type="texto">
+		<button class="btn">Click</button>
+	<script>
+  		let entrada = document.querySelector(".on"); 
+		let button = document.querySelector(".btn"); 
+ 		button.addEventListener("click", () => {
+			console.log("clic");
+			entrada.focus();
+			entrada.click();
+		});
+	</script>
 	</body>
-
 </html>
